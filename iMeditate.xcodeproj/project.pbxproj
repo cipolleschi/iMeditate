@@ -10,9 +10,16 @@
 		46382961276FA9250017BBD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382960276FA9250017BBD7 /* AppDelegate.swift */; };
 		46382963276FA9250017BBD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382962276FA9250017BBD7 /* SceneDelegate.swift */; };
 		46382965276FA9250017BBD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382964276FA9250017BBD7 /* ViewController.swift */; };
-		46382968276FA9250017BBD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46382966276FA9250017BBD7 /* Main.storyboard */; };
 		4638296A276FA92E0017BBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46382969276FA92E0017BBD7 /* Assets.xcassets */; };
 		4638296D276FA92E0017BBD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4638296B276FA92E0017BBD7 /* LaunchScreen.storyboard */; };
+		46382977276FA9950017BBD7 /* Composer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382976276FA9950017BBD7 /* Composer.swift */; };
+		4638297A276FA9CB0017BBD7 /* LoggingAgeManagerDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382979276FA9CB0017BBD7 /* LoggingAgeManagerDecorator.swift */; };
+		46382981276FAA310017BBD7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638297C276FAA310017BBD7 /* Helpers.swift */; };
+		46382982276FAA310017BBD7 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638297D276FAA310017BBD7 /* Logging.swift */; };
+		46382983276FAA310017BBD7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638297E276FAA310017BBD7 /* WelcomeView.swift */; };
+		46382984276FAA310017BBD7 /* ReasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638297F276FAA310017BBD7 /* ReasonsView.swift */; };
+		46382985276FAA310017BBD7 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382980276FAA310017BBD7 /* AgeView.swift */; };
+		46382988276FAA690017BBD7 /* LoggingWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46382987276FAA690017BBD7 /* LoggingWelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +27,17 @@
 		46382960276FA9250017BBD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46382962276FA9250017BBD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46382964276FA9250017BBD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46382967276FA9250017BBD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46382969276FA92E0017BBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4638296C276FA92E0017BBD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4638296E276FA92E0017BBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46382976276FA9950017BBD7 /* Composer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composer.swift; sourceTree = "<group>"; };
+		46382979276FA9CB0017BBD7 /* LoggingAgeManagerDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingAgeManagerDecorator.swift; sourceTree = "<group>"; };
+		4638297C276FAA310017BBD7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4638297D276FAA310017BBD7 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		4638297E276FAA310017BBD7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		4638297F276FAA310017BBD7 /* ReasonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonsView.swift; sourceTree = "<group>"; };
+		46382980276FAA310017BBD7 /* AgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		46382987276FAA690017BBD7 /* LoggingWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingWelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		4638295F276FA9250017BBD7 /* iMeditate */ = {
 			isa = PBXGroup;
 			children = (
+				46382986276FAA3C0017BBD7 /* Onboarding */,
+				46382978276FA9B90017BBD7 /* Composition */,
 				46382960276FA9250017BBD7 /* AppDelegate.swift */,
 				46382962276FA9250017BBD7 /* SceneDelegate.swift */,
 				46382964276FA9250017BBD7 /* ViewController.swift */,
-				46382966276FA9250017BBD7 /* Main.storyboard */,
 				46382969276FA92E0017BBD7 /* Assets.xcassets */,
 				4638296B276FA92E0017BBD7 /* LaunchScreen.storyboard */,
 				4638296E276FA92E0017BBD7 /* Info.plist */,
 			);
 			path = iMeditate;
+			sourceTree = "<group>";
+		};
+		46382978276FA9B90017BBD7 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				46382976276FA9950017BBD7 /* Composer.swift */,
+				46382979276FA9CB0017BBD7 /* LoggingAgeManagerDecorator.swift */,
+				46382987276FAA690017BBD7 /* LoggingWelcomeViewController.swift */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		46382986276FAA3C0017BBD7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				46382980276FAA310017BBD7 /* AgeView.swift */,
+				4638297C276FAA310017BBD7 /* Helpers.swift */,
+				4638297D276FAA310017BBD7 /* Logging.swift */,
+				4638297F276FAA310017BBD7 /* ReasonsView.swift */,
+				4638297E276FAA310017BBD7 /* WelcomeView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +164,6 @@
 			files = (
 				4638296D276FA92E0017BBD7 /* LaunchScreen.storyboard in Resources */,
 				4638296A276FA92E0017BBD7 /* Assets.xcassets in Resources */,
-				46382968276FA9250017BBD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +175,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				46382965276FA9250017BBD7 /* ViewController.swift in Sources */,
+				46382981276FAA310017BBD7 /* Helpers.swift in Sources */,
+				4638297A276FA9CB0017BBD7 /* LoggingAgeManagerDecorator.swift in Sources */,
+				46382983276FAA310017BBD7 /* WelcomeView.swift in Sources */,
+				46382982276FAA310017BBD7 /* Logging.swift in Sources */,
+				46382977276FA9950017BBD7 /* Composer.swift in Sources */,
+				46382988276FAA690017BBD7 /* LoggingWelcomeViewController.swift in Sources */,
+				46382985276FAA310017BBD7 /* AgeView.swift in Sources */,
 				46382961276FA9250017BBD7 /* AppDelegate.swift in Sources */,
 				46382963276FA9250017BBD7 /* SceneDelegate.swift in Sources */,
+				46382984276FAA310017BBD7 /* ReasonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46382966276FA9250017BBD7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46382967276FA9250017BBD7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4638296B276FA92E0017BBD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +329,6 @@
 				INFOPLIST_FILE = iMeditate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +355,6 @@
 				INFOPLIST_FILE = iMeditate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
